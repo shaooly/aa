@@ -2,14 +2,11 @@ import datetime
 import os
 from apscheduler.schedulers.background import BackgroundScheduler
 import time
+import pickle
 #print(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+import Task
 
-def job():
-	os.system("calc.exe")
 
-sched = BackgroundScheduler()
 
-sched.add_job(job, 'date', run_date = '2023-7-5 22:12:00')
-
-sched.start()
-
+a = "2023-08-08 18:20:05"
+print(datetime.datetime.strptime(a, "%Y-%m-%d %H:%M:%S"))
